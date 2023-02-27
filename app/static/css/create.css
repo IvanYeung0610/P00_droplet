@@ -1,0 +1,40 @@
+body {
+  background-color: grey;
+}
+
+h1 {
+  font-family: arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+
+textarea {
+    width: 700px;
+    height: 200px;
+    font-size: 24px;
+    resize: none;
+}
+
+.title {
+    width: 700px;
+    text-align: center;
+}
+
+.body-wrapper {
+  justify-content: center;
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  font-size: 1.3vw;
+  height: 3vw;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.error {
+  color: red;
+}

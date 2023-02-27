@@ -1,0 +1,58 @@
+.body-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+  font-size: 5vw;
+  padding: 10px;
+
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px
+}
+
+.register-text {
+  margin: 0px;
+}
+
+.register-wrapper {
+  font-size: 2vw;
+  display: grid;
+  background: grey;
+  padding: 10px;
+  padding-bottom: 20px;
+
+  border-width: 7px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 30px;
+}
+
+.checkbox {
+  width: 1.5vw;
+  height: 1.5vw;
+}
+
+.field {
+  text-align: left;
+  padding: 5px;
+  font-size: .9vw;
+  height: 1.5vw;
+  width: 98%;
+  border-radius: 10px;
+}
+
+.button {
+  text-align: center;
+  font-size: 1.3vw;
+  height: 3vw;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.error {
+  color: red;
+}

@@ -1,0 +1,38 @@
+body {
+  background-color: grey;
+}
+
+h1 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+
+h2 {
+  font-family: arial, sans-serif;
+  font-size: 48px;
+  text-decoration: underline;
+}
+
+.content {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+
+.body-wrapper {
+  justify-content: center;
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  font-size: 1.3vw;
+  height: 3vw;
+  width: 50%;
+  border-radius: 10px;
+}

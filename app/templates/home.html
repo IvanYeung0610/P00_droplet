@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> HOME PAGE </title>
+    <link rel="stylesheet" type="text/css" href="../static/css/home.css">
+  </head>
+
+  <body>
+  <div class="body-wrapper">
+  <h1 class="title"> Welcome to the home page! <br> Create new stories. Contribute to pre-existing ones. Read the stories you help make!</h1> <br>
+
+    <form action="/create" method="post">
+      <input type="submit" name="submit" value="Create a New Story" class="button">
+    </form>
+
+    <hr>
+
+    <h2>STORIES YOU CAN CONTRIBUTE TO:</h2>
+
+    <br>
+    <div class="grid-container">
+      {% for title in add %}
+      <div class="grid-item">
+        <form action="/add" method="post">
+          <input type="hidden" name="title" value="{{title}}">
+          <input type="submit" name="submit" value="{{title}}" class="story">
+        </form>
+      </div>
+      {% endfor %}
+    </div>
+
+    <hr>
+
+    <h2>STORIES YOU CAN READ:</h2>
+
+    <br>
+    <div class="grid-container">
+      {% for title in view %}
+      <div class="grid-item">
+        <form action="/view" method="post">
+          <input type="hidden" name="title" value="{{title}}">
+          <input type="submit" name="submit" value="{{title}}" class="story">
+        </form>
+      </div>
+      {% endfor %}
+    </div>
+
+    <hr>
+
+    <form action="/logout" method="post">
+        <input type="submit" name="submit" value="Logout" class="button">
+    </form>
+  </div>
+  </body>
+</html>

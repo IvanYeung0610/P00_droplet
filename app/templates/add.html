@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> CREATE PAGE </title>
+    <link rel="stylesheet" type="text/css" href="../static/css/add.css">
+  </head>
+
+  <body>
+    <div class="body-wrapper">
+    <h1> Welcome to the add page. Add to a story here!!!</h1> <br>
+
+    <h2>
+    <div class="label">TITLE:</div> {{ title }} <br><br>
+    <div class="label">LATEST CONTRIBUTION:</div> {{ latest_contribution }} <br><br>
+      <div class="label">PUBLISHER:</div> {{ publisher }}
+    <h2>
+
+    <form action="/save" method="post">
+      <input type="hidden" name="title" value={{title}} class="title"></input><br>
+      <textarea name="contribution" placeholder="contribution" maxlength="200" wrap="hard" required></textarea><br>
+      <input type="submit" name="submit" value="Save" class="button">
+    </form>
+
+    <form action="/home" method="post">
+        <input type="submit" name="submit" value="Return to Home Page" class="button">
+    </form>
+  </div>
+  </body>
+</html>

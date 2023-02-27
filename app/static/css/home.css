@@ -1,0 +1,45 @@
+body {
+  background-color: grey;
+}
+
+h1 {
+  font-family: arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+
+form {
+  padding: 5px
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.body-wrapper {
+  justify-content: center;
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  font-size: 1.3vw;
+  height: 3vw;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.story {
+  text-align: center;
+  font-size: 1.3vw;
+  border-radius: 10px;
+}

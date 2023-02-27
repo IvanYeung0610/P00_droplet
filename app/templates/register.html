@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+# <div ID="success"></div>: Daniel Yentin, Ivan Yeung
+# SoftDev
+# Oct 2022
+
+     simple demo of HTML forms via Flask
+
+     trioTASK:
+     If any member of team has forms experience, let their know-how OSMOTE.
+     If no one does, seek external assistance.
+
+     PROTIP: Revisit code from intro if you have it.
+     Peruse this code together and discuss how it should work,
+       in conjunction with the back end apparatus.
+ -->
+
+
+<html>
+
+  <head>
+    <title> REGISTER PAGE </title>
+    <link rel="stylesheet" type="text/css" href="../static/css/register.css">
+  </head>
+
+  <body>
+    <div class="body-wrapper">
+      <div class="center">
+        <h1 class="title">
+          JOIN TODAY!
+        </h1>
+            <div class="register-wrapper">
+
+        <h3 class="register-text">
+          Register an account
+        </h3>
+
+        <div class="form-wrapper">
+          <form action="/register/auth" method ='POST' class="form">
+            <input type="text" name="username" placeholder="username" required class="field"><br>
+            <input type="text" name="password" placeholder="password" required class="field"><br>
+            <br>
+            <input type="submit" name="submit" value="Register" class="button">
+          </form>
+            <div class="error">
+            {% if error %}
+              ERROR: {{ error }}
+            {% endif %}
+            </div> <br>
+        </div> <br>
+
+        <div>
+          <form action="/login" method ='POST'>
+            Already have an account?<br>
+            <input type="submit" name="submit" value="Login" class="button">
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

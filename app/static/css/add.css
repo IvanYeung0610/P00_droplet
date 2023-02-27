@@ -1,0 +1,42 @@
+body {
+  background-color: grey;
+}
+
+h1 {
+  font-family: arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+
+textarea {
+    width: 700px;
+    height: 200px;
+    font-size: 24px;
+    resize: none;
+}
+
+h2{
+  font-size: 48px;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+
+.label {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+
+.body-wrapper {
+  justify-content: center;
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  font-size: 1.3vw;
+  height: 3vw;
+  width: 50%;
+  border-radius: 10px;
+}
